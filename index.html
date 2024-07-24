@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сучасне Будівництво</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .section h2 {
+            color: #1f1c2c;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        .section h2::after {
+            content: '';
+            width: 50px;
+            height: 5px;
+            background: #ff6f61;
+            display: block;
+            margin: 20px auto 0;
+            border-radius: 5px;
+        }
+        .portfolio {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .project {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        .project img {
+            width: 100%;
+            display: block;
+        }
+        .project h3 {
+            margin: 0;
+            padding: 20px;
+            background: #1f1c2c;
+            color: #ffffff;
+            font-size: 1.5em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-transform: uppercase;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #1f1c2c;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff6f61;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #e65c53;
+        }
+        nav a:hover {
+            color: #e65c53;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .section {
+            animation: fadeIn 1.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Сучасне Будівництво</h1>
+        <nav>
+            <a href="#portfolio">Портфоліо</a>
+            <a href="#about">Про нас</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="portfolio" class="section">
+            <h2>Наше портфоліо</h2>
+            <div class="portfolio">
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Проєкт 1">
+                    <h3>Офісний Центр</h3>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Проєкт 2">
+                    <h3>Торговий Комплекс</h3>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Проєкт 3">
+                    <h3>Бізнес-Центр</h3>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <h2>Про нас</h2>
+            <p>Ми провідна будівельна компанія, яка спеціалізується на будівництві високоякісних житлових і комерційних об'єктів. Наша команда експертів забезпечує виконання кожного проєкту з досконалістю і точністю.</p>
+        </section>
+        <section id="contact" class="section">
+            <h2>Контакти</h2>
+            <p>Якщо у вас є питання або ви хочете обговорити проєкт, будь ласка, зв'яжіться з нами!</p>
+            <a href="mailto:info@modernconstruction.com" class="btn">Написати нам</a>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Сучасне Будівництво. Усі права захищено.</p>
+    </footer>
+</body>
+</html>
